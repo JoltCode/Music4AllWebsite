@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #070a13;
+}
+
+.introContainer {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: min(65vw, 1000px);
+    height: max(50vh, 360px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    position: fixed;
+    
+}
+
+.introContainer .aboutContainer h2 {
+    z-index: 3;
+    color: #ABABAB;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: auto;
+    text-align: center;
+    z-index: 5;
+    opacity: 1;
+}
+
+.introContainer .aboutContainer h1 {
+    font-size: 58px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76px; /* 131.552% */
+    letter-spacing: -1px;
+    background: linear-gradient(92deg, #DBDBDB 3.89%, #383838 120.98%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*DBDBDB*/
+    /*383838*/
+    z-index: 5;
+}
+
+.introContainer img {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    color: lightgray;
+    top: max(-160px, -10vh);
+    width: max(50vw, 600px);
+    opacity: 0.99;
+    z-index: 0;
+}
+
+.scrollContainer {
+    margin-top: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    z-index: 5;
+}
+
+.scrollContainer p {
+
+}
+
+.introContainer p {
+    color: #ABABAB;
+    font-family: Poppins, sans-serif;
+    font-size: 2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.introContainer svg {
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.introContainer svg:hover {
+    opacity: 0.9;
+    transform: scale(1.08);
+}
+
+.introContainer svg:hover > path,
+.introContainer svg:hover > rect {
+    transition: all ease-in-out 0.2s;
+    stroke: #9781CC;
+}
+
+.aboutContainer {
+    position: relative;
+}
+
+.infoContainer {
+    position: relative;
+    background-color: #070a13;
+    border-top: 0.5px solid white;
+    margin: 0;
+    padding: 0;
+    margin-top: 100vh;
+    height: max(max-content, 100vh);
+    width: 100vw;
+}
+
+#numbers {
+    display: flex;
+    align-items: flex-start; 
+    width: 20vw;
+    margin: auto;
+}
+
+/* convert to classes and change names to make it work for all */
+/* make gap be vw and have a min */
+/* when it gets too small, make a media query to align the #numbers vertically and lower the gaps and stuff */
+
+.volunterYears {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    width: fit-content;
+}
+
+.textContainer {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1 1 0;
+    width: fit-content;
+    min-width: 0;
+}
+
+.bigText {
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110px;
+    cursor: default;
+    text-shadow:
+        0 0 7px #fff;
+
+    transition: all 0.2s ease-in-out;
+    width: min(100px, fit-content);
+}
+
+.caption {
+    color: #ABABAB;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: default;
+    text-wrap: nowrap;
+    text-shadow:
+        0 0 3px #ABABAB;
+}
+
+.bigText:hover {
+    opacity: 0.9;
+    text-shadow:
+        0 0 10px #fff;
+}
+
+.dataContainer {
+    display: flex;
+    width: 60vw;
+    margin: auto;
+    margin-top: 8vh;
+    gap: min(1500px, 10vw);
+    justify-content: center;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.hidden1 {
+    transform: translateX(-120%);
+    transition: opacity 0.2s ease-in-out, filter 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.hidden2 {
+    transform: translateX(-50%);
+    transition: opacity 0.2s ease-in-out, filter 0.7s ease-in-out, transform 0.7s ease-out;
+    transition-delay: 0.6s;
+}
+
+.hidden3 {
+    transform: translateX(120%);
+    transition: opacity 0.2s ease-in-out, filter 1s ease-in-out, transform 1s ease-in-out;
+    transition-delay: 0s;
+}
+
+.hidden4 {
+    transform: translateX(50%);
+    transition: opacity 0.2s ease-in-out, filter 0.7s ease-in-out, transform 0.7s  ease-out;
+    transition-delay: 0.6s;
+}
+
+.show {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+}
+
+@media (max-width: 1125px) {
+    .dataContainer {
+        gap: 5vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .dataContainer  {
+        flex-direction: column;
+        gap: 10vh;
+        min-height: min-content;
+    }
+    
+    .volunterYears {
+        flex-direction: row;
+        gap: min(30vw, 100px);
+    }
+
+    .bigText {
+        line-height: 60px;
+    }
+
+    .textContainer {
+        width: 40vw;
+        margin-left: auto;
+    }
+
+    .bigText2 {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .bigText {
+        font-size: 4rem;
+    }
+
+    .caption {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .bigText {
+        font-size: 3.5rem;
+    }
+
+    .caption {
+        font-size: 1.5rem;
+    }
+
+    .volunterYears {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 620px) {
+    .bigText {
+        font-size: 3.2rem;
+    }
+
+    .caption {
+        font-size: 1.2rem;
+    }
+
+    .volunterYears {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .volunterYears {
+        flex-direction: column;
+    }
+
+    .textContainer {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .bigText {
+        margin: 0;
+    }
+
+    .dataContainer {
+        display: flex;
+        align-items: center;
+        gap: 7vh;
+    }
+
+    .volunterYears {
+        gap: 7vh;
+    }
+}
