@@ -71,7 +71,7 @@ body {
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    line-height: 76px; /* 131.552% */
+    line-height: 76px;
     letter-spacing: -1px;
     background: linear-gradient(92deg, #DBDBDB 3.89%, #383838 120.98%);
     background-clip: text;
@@ -84,6 +84,7 @@ body {
 
 .introContainer img {
     position: absolute;
+    flex-shrink: 0;
     left: 0; 
     right: 0; 
     margin-left: auto; 
@@ -140,8 +141,7 @@ body {
     margin: 0;
     padding: 0;
     margin-top: 100vh;
-    height: 100vh;
-    min-height: fit-content;
+    height: fit-content;
     width: 100vw;
 }
 
@@ -254,6 +254,66 @@ body {
 }
 
 /* Start our story */
+.storyContainer {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 80vw;
+    max-width: 800px;
+    min-width: 300px;
+    height: fit-content;
+    margin: 30px auto 15px;
+    word-spacing: 10px;
+}
+
+.storyContainer h1 {
+    margin: 50px auto 5px;
+    color: #AA92E5;
+    font-family: 'Inter';
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 5rem;
+    letter-spacing: -0.01rem;
+}
+
+.storyContainer h1 span {
+    color: #DBDBDB;
+    font-family: 'Inter';
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 5rem;
+    letter-spacing: -0.01rem;
+}
+.storyContainer .storyTextContainer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: max(fit-content, 100%);
+}
+
+.storyTextContainer .paragraphContainer {
+    width: 80%;
+}
+
+.storyTextContainer .paragraphContainer p, .storyTextContainer .paragraphContainer span {
+    color: #ABABAB;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    word-spacing: 0;
+}
+
+.storyTextContainer .paragraphContainer span {
+    color: #F2F2F2;
+}
+
+/* Change Animations for Media Queries */
 
 @media (max-width: 1125px) {
     .dataContainer {
@@ -295,21 +355,22 @@ body {
 
 @media (max-width: 760px) {
     .bigText {
-        font-size: 4rem;
+        font-size: 3.3rem;
     }
 
     .caption {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 }
 
 @media (max-width: 660px) {
-    .bigText {
-        font-size: 3.5rem;
+    .introContainer .aboutContainer h1 {
+        font-size: 55px;
+        line-height: 60px;
     }
-
-    .caption {
-        font-size: 1.5rem;
+    
+    .introContainer .aboutContainer h2 {
+        font-size: 30px;
     }
 
     .volunterYears {
@@ -319,6 +380,13 @@ body {
     .introContainer {
         margin-top: 0;
     }
+    
+    .introContainer img {
+        width: max(300px, 100%);
+        min-height: 600px;
+        top: auto;
+        opacity: 1;
+    }
 }
 
 @media (max-width: 620px) {
@@ -326,16 +394,14 @@ body {
         font-size: 3.2rem;
     }
 
-    .caption {
-        font-size: 1.2rem;
-    }
-
     .volunterYears {
         gap: 50px;
     }
+
+    /* fix image heren*/
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .volunterYears {
         flex-direction: column;
     }
@@ -363,6 +429,31 @@ body {
 
     .introContainer svg {
         display: none;
+    }
+
+    .introContainer .aboutContainer h1 {
+        font-size: 47px;
+        line-height: 55px;
+    }
+    
+    .introContainer .aboutContainer h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 570px) {
+    .introContainer img {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .introContainer .aboutContainer h1 {
+        font-size: 46px;
+    }
+    
+    .introContainer .aboutContainer h2 {
+        font-size: 24px;
     }
 }
 
