@@ -17,9 +17,11 @@ html::-webkit-scrollbar {
 
 body {
     background-color: #070a13;
+    margin: 0;
 }
 
 .introContainer {
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -45,9 +47,11 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    z-index: 6;
 }
 
 .introContainer .aboutContainer h2 {
+    position: relative;
     z-index: 3;
     color: #ABABAB;
     font-family: Inter;
@@ -62,9 +66,11 @@ body {
     text-align: center;
     z-index: 5;
     opacity: 1;
+    z-index: 6;
 }
 
 .introContainer .aboutContainer h1 {
+    position: relative;
     font-size: 58px;
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -79,7 +85,7 @@ body {
     -webkit-text-fill-color: transparent;
     /*DBDBDB*/
     /*383838*/
-    z-index: 5;
+    z-index: 6;
 }
 
 .introContainer img {
@@ -92,8 +98,17 @@ body {
     color: lightgray;
     top: max(-160px, -10vh);
     width: max(50vw, 600px);
-    opacity: 0.99;
+    opacity: 1;
     z-index: 0;
+}
+
+.ambientLight {
+    position: absolute;
+    pointer-events: none;
+    width: 100vw;
+    height: 120vh;
+    bottom: auto;
+    z-index: 1;
 }
 
 .scrollContainer {
@@ -106,26 +121,31 @@ body {
 }
 
 .scrollContainer p {
+    position: relative;
     color: #ABABAB;
     font-family: 'Poppins';
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    z-index: 6;
 }
 
-.introContainer svg {
+.introContainer .scrollSvg {
     cursor: pointer;
-    transition: all ease-in-out 0.2s;
+    z-index: 6;
 }
 
-.introContainer svg:hover {
+.introContainer .scrollSvg.show {
+}
+
+.introContainer .scrollSvg:hover {
     opacity: 0.9;
     transform: scale(1.08);
 }
 
-.introContainer svg:hover > path,
-.introContainer svg:hover > rect {
+.introContainer .scrollSvg:hover > path,
+.introContainer .scrollSvg:hover > rect {
     transition: all ease-in-out 0.2s;
     stroke: #9781CC;
 }
@@ -247,10 +267,71 @@ body {
     transition-delay: 0.6s;
 }
 
+.hidden5 {
+    z-index: 6;
+    transition: opacity 1s ease-in-out, filter 1.2s ease-in-out;
+    transition-delay: 0.6s;
+}
+
+.hidden6 {
+    transition: opacity 1.0s ease-in-out, filter 1.2s ease-in-out, transform 0.7s  ease-out;
+    transition-delay: 0.8s;
+}
+
+.hidden7 {
+    z-index: 6;
+    transition: opacity 1s ease-in-out, filter 1.2s ease-in-out;
+    transition-delay: 1.0s;
+}
+
+.hidden8 {
+    z-index: 6;
+    transition: opacity 0.3s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.hidden9 {
+    z-index: 5;
+    transform: translateY(-300%);
+    transition: opacity 1s ease-in-out, filter 1.2s ease-in-out, transform 0.8s ease-in-out;
+    transition-delay: 1.6s;
+}
+
+.hidden10 {
+    z-index: 4;
+    transform: translateY(-200%);
+    transition: opacity 1s ease-in-out, filter 1.2s ease-in-out, transform 0.8s ease-in-out;
+    transition-delay: 2s;
+    /* animation: pointerEventsHandler 1.25s forwards; */
+}
+
+/*
+@keyframes pointerEventsHandler {
+    100% {pointer-events: all; cursor: pointer;}
+}*/
+
+#firstLight {
+    transition-delay: 0s;
+}
+
+#secondLight {
+    transition-delay: 0.2s;
+}
+
+#thirdLight {
+    transition-delay: 0.4s;
+}
+
+
+#fourthLight {
+    transition-delay: 0.6s;
+}
+
+
 .show {
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
+    pointer-events: all;
 }
 
 /* Start our story */
@@ -384,7 +465,6 @@ body {
     .introContainer img {
         width: max(300px, 100%);
         min-height: 600px;
-        top: auto;
         opacity: 1;
     }
 }
@@ -427,7 +507,7 @@ body {
         gap: 7vh;
     }
 
-    .introContainer svg {
+    .introContainer .scrollSvg {
         display: none;
     }
 
@@ -442,9 +522,6 @@ body {
 }
 
 @media (max-width: 570px) {
-    .introContainer img {
-        display: none;
-    }
 }
 
 @media (max-width: 550px) {
@@ -457,8 +534,21 @@ body {
     }
 }
 
+@media (max-width: 470px) {
+    
+    .introContainer img {
+        display: none;
+    }
+}
+
+@media (max-height: 550px) {
+    .introContainer .scrollSvg {
+        display: none;
+    }
+}
+
 @media (pointer:none) {
-    .introContainer svg {
+    .introContainer .scrollSvg {
         display: none;
     }
 }
