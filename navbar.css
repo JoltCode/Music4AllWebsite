@@ -1,0 +1,92 @@
+/* change the color scheme */
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1000;
+    width: 95vw;
+    margin: auto;
+    position: relative;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ABABAB;
+    font-family: 'Inter';
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    font-style: normal;
+    line-height: normal;
+    cursor: default;
+    text-wrap: nowrap;
+    text-shadow: 0 0 1px #ABABAB;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.links {
+    margin: auto;
+    padding-left: 0;
+}
+
+.links li a {
+    margin: 0 45px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    cursor: pointer;
+    text-shadow: 0 0 2px #ABAB;
+    transition: all 0.35s ease-out;
+}
+
+.links li a:hover {
+    color: #fff;
+    text-shadow: 0 0 0px;
+}
+
+.donatebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 4.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(90deg, #788FBF 0%, #9781CC 100%);
+    box-shadow: 0px 0px 50px 15px rgba(151, 129, 204, 0.28);
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.2s ease-out;
+}
+
+.donatebtn a {
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+.donatebtn:hover {
+    box-shadow: 0px 0px 50px 15px rgba(151, 129, 204, 0.40);
+}
+
+.logo {
+    color: white;
+}

@@ -15,6 +15,6 @@ const infoContainer = document.getElementById("scrollSvg")
     infoContainer.addEventListener("click", (e) => {
         //scrollTo(0, window.innerHeight + 1)
         $('html, body').animate({
-            scrollTop: window.innerHeight + 1
+            scrollTop: window.innerHeight
     }, 500)
 })

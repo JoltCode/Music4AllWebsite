@@ -4,26 +4,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="navbar.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="aboutme.js" defer></script>
-    </head>
+</head>
+
+<header>
+    <div class="navbar hidden hidden11">
+        <div class="logo"><a href="#">Music4All</a></div>
+        <ul class="links">
+            <li>
+                <a href="home">Home</a>
+                <a href="team">Our Team</a>
+                <a href="contact">Contact Us</a>
+            </li>
+        </ul>
+        <button class="donatebtn"><a href="#">Donate</a></button>
+        <div class="toggleBtn">
+            <!--<i class="fa-regular fa-bars"></i>-->
+        </div>
+    </div>
+</header>
+
 <body>
 
     <div class="introContainer">
-        <svg class="ambientLight hidden hidden8" id="secondLight" viewBox="0 0 957 729" fill="none" xmlns="http://www.w3.org/2000/svg"> <g opacity="0.6" filter="url(#filter0_f_342_247)"> <rect x="-34.5185" y="-298" width="1182.42" height="144" rx="72" transform="rotate(42.6061 -34.5185 -298)" fill="url(#paint0_linear_342_247)"/></g><defs><filter id="filter0_f_342_247" x="-252.266" y="-418.266" width="1208.3" height="1146.96" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_342_247"/></filter><linearGradient id="paint0_linear_342_247" x1="229.531" y1="-250.576" x2="1166.03" y2="-181.815" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#AA92E5"/><stop offset="0.693473" stop-color="#AA92E5" stop-opacity="0.74"/><stop offset="1" stop-color="#AA92E5" stop-opacity="0"/></linearGradient></defs></svg>
-        <svg class="ambientLight hidden hidden8" id="firstLight" viewBox="0 0 703 659" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" filter="url(#filter0_f_342_296)"><rect x="525.686" y="527.542" width="1182.42" height="144" rx="72" transform="rotate(-161.404 525.686 527.542)" fill="url(#paint0_linear_342_296)"/></g><defs><filter id="filter0_f_342_296" x="-725.818" y="-116.818" width="1428.24" height="775.179" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_342_296"/></filter><linearGradient id="paint0_linear_342_296" x1="1318.5" y1="655.86" x2="249.242" y2="508.319" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#929AE5"/><stop offset="0.693473" stop-color="#929AE5" stop-opacity="0.74"/><stop offset="1" stop-color="#929AE5" stop-opacity="0"/></linearGradient></defs></svg>
-        <svg class="ambientLight hidden hidden8" id="fourthLight" viewBox="0 0 611 615" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" filter="url(#filter0_f_342_295)"><rect x="131" y="348.764" width="1182.42" height="144" rx="72" transform="rotate(-19.5034 131 348.764)" fill="url(#paint0_linear_342_295)"/></g><defs><filter id="filter0_f_342_295" x="0.887238" y="-176.113" width="1422.87" height="790.727" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_342_295"/></filter><linearGradient id="paint0_linear_342_295" x1="923.819" y1="477.083" x2="-145.444" y2="329.542" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#929AE5"/><stop offset="0.693473" stop-color="#929AE5" stop-opacity="0.74"/><stop offset="1" stop-color="#929AE5" stop-opacity="0"/></linearGradient></defs></svg>
+        <!--Ordered Left to Right, Big Screen-->
+        <svg class="ambientLight hidden hidden8 largescreen" id="firstLight" viewBox="0 0 703 659" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" filter="url(#filter0_f_342_296)"><rect x="525.686" y="527.542" width="1182.42" height="144" rx="72" transform="rotate(-161.404 525.686 527.542)" fill="url(#paint0_linear_342_296)"/></g><defs><filter id="filter0_f_342_296" x="-725.818" y="-116.818" width="1428.24" height="775.179" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_342_296"/></filter><linearGradient id="paint0_linear_342_296" x1="1318.5" y1="655.86" x2="249.242" y2="508.319" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#929AE5"/><stop offset="0.693473" stop-color="#929AE5" stop-opacity="0.74"/><stop offset="1" stop-color="#929AE5" stop-opacity="0"/></linearGradient></defs></svg>
+        <svg class="ambientLight hidden hidden8 largescreen" id="secondLight" viewBox="0 0 957 729" fill="none" xmlns="http://www.w3.org/2000/svg"> <g opacity="0.6" filter="url(#filter0_f_342_247)"> <rect x="-34.5185" y="-298" width="1182.42" height="144" rx="72" transform="rotate(42.6061 -34.5185 -298)" fill="url(#paint0_linear_342_247)"/></g><defs><filter id="filter0_f_342_247" x="-252.266" y="-418.266" width="1208.3" height="1146.96" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_342_247"/></filter><linearGradient id="paint0_linear_342_247" x1="229.531" y1="-250.576" x2="1166.03" y2="-181.815" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#AA92E5"/><stop offset="0.693473" stop-color="#AA92E5" stop-opacity="0.74"/><stop offset="1" stop-color="#AA92E5" stop-opacity="0"/></linearGradient></defs></svg>
+        <svg class="ambientLight hidden hidden8 largescreen" id="thirdLight" viewBox="0 0 856 666" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" filter="url(#filter0_f_342_294)"><rect x="121" y="454.246" width="1182.42" height="144" rx="72" transform="rotate(-51.335 121 454.246)" fill="url(#paint0_linear_342_294)"/></g><defs><filter id="filter0_f_342_294" x="0.198974" y="-589.801" width="1092.77" height="1254.81" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_342_294"/></filter><linearGradient id="paint0_linear_342_294" x1="913.819" y1="582.564" x2="-155.444" y2="435.023" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#AA92E5"/><stop offset="0.693473" stop-color="#AA92E5" stop-opacity="0.74"/><stop offset="1" stop-color="#AA92E5" stop-opacity="0"/></linearGradient></defs></svg>
+        <svg class="ambientLight hidden hidden8 largescreen" id="fourthLight" viewBox="0 0 611 615" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" filter="url(#filter0_f_342_295)"><rect x="131" y="348.764" width="1182.42" height="144" rx="72" transform="rotate(-19.5034 131 348.764)" fill="url(#paint0_linear_342_295)"/></g><defs><filter id="filter0_f_342_295" x="0.887238" y="-176.113" width="1422.87" height="790.727" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_342_295"/></filter><linearGradient id="paint0_linear_342_295" x1="923.819" y1="477.083" x2="-145.444" y2="329.542" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#929AE5"/><stop offset="0.693473" stop-color="#929AE5" stop-opacity="0.74"/><stop offset="1" stop-color="#929AE5" stop-opacity="0"/></linearGradient></defs></svg>
 
-
-        <!--Top RIght Beam of Light-->
-        <svg class="ambientLight hidden hidden8" id="thirdLight" viewBox="0 0 856 666" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" filter="url(#filter0_f_342_294)"><rect x="121" y="454.246" width="1182.42" height="144" rx="72" transform="rotate(-51.335 121 454.246)" fill="url(#paint0_linear_342_294)"/></g><defs><filter id="filter0_f_342_294" x="0.198974" y="-589.801" width="1092.77" height="1254.81" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_342_294"/></filter><linearGradient id="paint0_linear_342_294" x1="913.819" y1="582.564" x2="-155.444" y2="435.023" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#AA92E5"/><stop offset="0.693473" stop-color="#AA92E5" stop-opacity="0.74"/><stop offset="1" stop-color="#AA92E5" stop-opacity="0"/></linearGradient></defs></svg>
+        <!--Ordered Left to Right, Small Screen-->
+        <svg class="ambientLight hidden hidden8 smallscreen" id="firstLight" viewBox="0 0 173 417" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" filter="url(#filter0_f_353_584)"><rect width="432.008" height="52.0258" rx="26.0129" transform="matrix(-0.806957 -0.590611 -0.62324 0.78203 113.036 315.793)" fill="url(#paint0_linear_353_584)"/></g><defs><filter id="filter0_f_353_584" x="-327.321" y="0.8573" width="499.677" height="415.409" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="35" result="effect1_foregroundBlur_353_584"/></filter><linearGradient id="paint0_linear_353_584" x1="289.664" y1="46.3602" x2="-100.836" y2="-8.12933" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#929AE5"/><stop offset="0.693473" stop-color="#929AE5" stop-opacity="0.74"/><stop offset="1" stop-color="#929AE5" stop-opacity="0"/></linearGradient></defs></svg>
+        <svg class="ambientLight hidden hidden8 smallscreen" id="secondLight" viewBox="0 0 240 511" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" filter="url(#filter0_f_353_583)"><rect width="555.379" height="53.1455" rx="26.5728" transform="matrix(-0.368463 -0.929642 -0.939685 0.342042 177 429.977)" fill="url(#paint0_linear_353_583)"/></g><defs><filter id="filter0_f_353_583" x="-139.644" y="-148.864" width="378.711" height="659.556" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="35" result="effect1_foregroundBlur_353_583"/></filter><linearGradient id="paint0_linear_353_583" x1="372.385" y1="47.358" x2="-124.097" y2="-39.8279" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#AA92E5"/><stop offset="0.693473" stop-color="#AA92E5" stop-opacity="0.74"/><stop offset="1" stop-color="#AA92E5" stop-opacity="0"/></linearGradient></defs></svg>
+        <svg class="ambientLight hidden hidden8 smallscreen" id="thirdLight" viewBox="0 0 293 556" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" filter="url(#filter0_f_353_581)"><rect x="63.0446" y="474.617" width="641.55" height="51.1944" rx="25.5972" transform="rotate(-69.2018 63.0446 474.617)" fill="url(#paint0_linear_353_581)"/></g><defs><filter id="filter0_f_353_581" x="0.458618" y="-187.714" width="400.83" height="743.094" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="35" result="effect1_foregroundBlur_353_581"/></filter><linearGradient id="paint0_linear_353_581" x1="493.208" y1="520.236" x2="17.1467" y2="425.657" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#AA92E5"/><stop offset="0.693473" stop-color="#AA92E5" stop-opacity="0.74"/><stop offset="1" stop-color="#AA92E5" stop-opacity="0"/></linearGradient></defs></svg>
+        <svg class="ambientLight hidden hidden8 smallscreen" id="fourthLight" viewBox="0 0 212 417" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.6" filter="url(#filter0_f_353_582)"><rect x="60.2978" y="315.793" width="420.37" height="51.1944" rx="25.5972" transform="rotate(-37.3702 60.2978 315.793)" fill="url(#paint0_linear_353_582)"/></g><defs><filter id="filter0_f_353_582" x="0.578613" y="0.925781" width="484.592" height="415.272" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="35" result="effect1_foregroundBlur_353_582"/></filter><linearGradient id="paint0_linear_353_582" x1="342.158" y1="361.413" x2="-37.9827" y2="308.959" gradientUnits="userSpaceOnUse"><stop offset="0.20236" stop-color="#929AE5"/><stop offset="0.693473" stop-color="#929AE5" stop-opacity="0.74"/><stop offset="1" stop-color="#929AE5" stop-opacity="0"/></linearGradient></defs></svg>
 
         <img class="hidden hidden7" src="images/globelarge.png" alt="">
-            
-        <!--<img src="images/globelarge.png" alt="">-->
+        
         <div class="aboutContainer hidden hidden7">
-            <h2>About Us</h2>
-            <h1>A Student Nonprofit Focused on STEM Education</h1>
+            <h2>Music 4 All</h2>
+            <h1>Reaching the Unreached</h1>
         </div>
         <div class="scrollContainer">
             <p class="hidden hidden9">SCROLL TO DISCOVER</p>
@@ -38,6 +61,7 @@
     
 
     <div class="infoContainer">
+        <!--
         <div class="dataContainer">
             <div class="volunterYears hidden hidden1">
                 <div class="textContainer">
@@ -69,7 +93,7 @@
                     <span class="caption">Volunteer Hours</span>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <div class="storyContainer hidden hidden5">
             <h1>Our<span> Story</span></h1>
@@ -92,6 +116,8 @@
                 </div>
             </div>
         </div>
+
+        div
     </div>
         
 
