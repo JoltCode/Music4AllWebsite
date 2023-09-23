@@ -1,0 +1,182 @@
+.teamsection * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 16px;
+    text-align: center;
+    padding-top: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 24px;
+}
+
+.row h1 {
+    padding-top: 50px;
+    color: #DBDBDB;
+    font-family: 'Inter';
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 5rem;
+    letter-spacing: -0.01rem;
+}
+
+.row h1 span {
+    color: #AA92E5;
+    font-family: 'Inter';
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 5rem;
+    letter-spacing: -0.01rem;
+}
+
+.column {
+    width: 100%;
+    padding: 0.5em 0;
+    scroll-snap-align: center;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 56px;
+    color: #1f003b;
+}
+
+.card {
+    box-shadow: 0 0 0 0.03em rgba(25, 0, 58, 0.1);
+    padding: 56px 16px;
+    border-radius: 0.6em;
+    color: #1f003b;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(100px);
+    transform: scale(0.95);
+}
+
+.middleCard {
+}
+
+.card .imgContainer {
+    width: 8em;
+    height: 8em;
+    padding: 0.5em;
+    background-color: #a993ff;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+    transition: 0.4s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card h3 {
+    font-weight: 500;
+    color: white;
+}
+
+.card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.icons {
+    width: 50%;
+    min-width: 180px;
+    max-width: 225px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card a {
+    text-decoration: none;
+    color: #f5f5ff;
+    font-size: 2em;
+    transition: 0.2s;
+}
+
+.card:hover {
+    background: #8567f7; /* change later */ 
+}
+
+.card:hover a {
+    color: white;    
+}
+
+.card:hover .imgContainer {
+    transform: scale(1.05);
+    background-color: white;
+}
+
+.column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+}
+
+.sideCard {
+    transform: scale(.9);
+    display: none;
+    width: 0;
+}
+
+.middleCard {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.5);
+}
+
+
+@media screen and (min-width: 768px) {
+    .teamsection {
+        padding: 1em 7em;
+    }
+
+    .middleCardMain {
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .teamsection {
+        padding: 1em;
+    }
+
+    .card {
+        padding: 5em 1em;
+    }
+
+    .sideCard {
+        display: block;
+    }
+
+}
+
+    @media (max-width: 992px) {
+        .middleCard {
+            width: 70%;
+            max-width: 600px;
+            min-width: 300px;
+            margin: auto;
+        }
+
+    #middleCardMain {
+        min-width: 100%;
+    }
+
+    .row {
+        width: 100%;
+    }
+}

@@ -75,6 +75,7 @@ header {
     align-items: center;
     gap: 1rem;
     transition: all 0.2s ease-out;
+    margin-left: auto;
 }
 
 .donatebtn a {
@@ -89,4 +90,9 @@ header {
 
 .logo {
     color: white;
+    width: 20%;
+}
+
+.donateDiv {
+    width: 20%;
 }
