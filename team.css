@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 1rem;
     width: 100%;
 }
 
@@ -45,14 +46,20 @@ h1 {
 
 .card {
     box-shadow: 0 0 0 0.03em rgba(25, 0, 58, 0.1);
-    padding: 56px 16px;
+    padding: 56px 0px;
     border-radius: 0.6em;
     color: #1f003b;
     cursor: pointer;
     transition: 0.4s;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(100px);
-    transform: scale(0.95);
+    flex-shrink: 1;
+}
+
+/* class that targets .cardName and .cardRole inside .middleCard */
+.middleCard .cardName, .middleCard .cardRole {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .card .imgContainer {
@@ -133,7 +140,6 @@ h1 {
     }
 
     .card {
-        padding: 5em 1em;
     }
 
     .sideCard {
@@ -144,10 +150,7 @@ h1 {
 
     @media (max-width: 992px) {
         .middleCard {
-            width: 70%;
-            max-width: 600px;
-            min-width: 300px;
-            margin: auto;
+            flex-grow: 1 !important;
         }
 
     #middleCardMain {
