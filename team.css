@@ -5,10 +5,18 @@
 
 .cardContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .cardContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .teamText {

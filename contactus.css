@@ -1,0 +1,59 @@
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.contactText {
+    color: #DBDBDB;
+    font-family: 'Inter';
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 5rem;
+    letter-spacing: -0.01rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.contactText span {
+    color: #AA92E5;
+    font-family: 'Inter';
+    text-align: center;
+    display: inline;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #DBDBDB;
+    font-family: 'Inter';
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: -0.01rem;
+    text-align: center;
+    margin: 0;
+    gap: 16rem;
+}
+
+.emailTitle {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.emailContainer {
+    margin: 0;
+}
+
+.emailContainer a {
+    color: #AA92E5;
+    font-family: 'Inter';
+    text-align: center;
+    font-size: 2rem;
+}
